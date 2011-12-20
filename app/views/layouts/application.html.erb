@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopper</title>
+    <%= stylesheet_link_tag :all %>
+    <%= javascript_include_tag :defaults %>
+    <%= csrf_meta_tag %>
+
+    <style>
+      div.page-header {
+        background-color: whiteSmoke;
+        padding: 20px 20px 10px;
+        margin: -20px -20px 20px;
+        border-bottom: 1px solid #ddd;
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        -mox-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+      }
+
+      body {
+        padding-top: 40px;
+        background-color: #eee;
+      }
+
+      .content {
+        background-color: white;
+        margin: 0 -20px;
+        padding: 20px;
+        -webkit-border-radius: 0 0 6px 6px;
+        -moz-border-radius: 0 0 6px 6px;
+        border-radius: 0 0 6px 6px;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 0 1px 2px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="fill">
+        <div class="container">
+          <%= link_to "UPSearch", "/", :class => "brand" %>
+          <ul class="nav">
+            <li><%= link_to "Home", "/" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="content">
+        <div class="page-header">
+          <h1>Smart Shopper</h1>
+        </div>
+        <div class="row">
+          <div class="span16">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

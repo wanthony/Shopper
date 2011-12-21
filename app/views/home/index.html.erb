@@ -1,2 +1,21 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h2>Television Pricing</h2>
+<table class="zebra-striped">
+  <thead>
+    <tr>
+      <th>Item Name</th>
+      <th>Model #</th>
+      <th>Rating</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @televisions.each do |tv| %>
+      <tr>
+        <td><%= tv.name %></td>
+        <td><%= tv.model %></td>
+        <td><%= tv.rating %></td>
+        <td><%= number_to_currency(tv.price) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

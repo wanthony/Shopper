@@ -39,9 +39,9 @@
     <div class="topbar">
       <div class="fill">
         <div class="container">
-          <%= link_to "UPSearch", "/", :class => "brand" %>
+          <%= link_to "Shopper", home_index_path, :class => "brand" %>
           <ul class="nav">
-            <li><%= link_to "Home", "/" %></li>
+            <li><%= link_to "Home", home_index_path %></li>
           </ul>
         </div>
       </div>
@@ -54,7 +54,7 @@
         <div class="row">
           <div class="span16">
             <%= yield %>
-          </div>
+           </div>
         </div>
       </div>
     </div>

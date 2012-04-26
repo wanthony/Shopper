@@ -19,3 +19,5 @@ He would like to be able to do more with this application, so he has tasked you 
 * He would like the ability to mark a television as an item of interest.  He should be able to easily view 
   and manage a list of favorite televisions.
 
+TEST
+
